@@ -1,0 +1,37 @@
+@media screen and (min-width: 1000px) {
+    .flex-container {
+        height: 100vh;
+    }
+    
+    .cards-container {
+        flex-direction: row;
+        padding: 100px;
+    }
+
+    .card {
+        width: 300px;
+        max-height: 450px;
+        display: flex;        
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4%;
+
+        a {
+            margin-top: 50px;
+            width: 140px;
+        }
+    }
+
+    #sedans {
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    #suvs {
+        background-color: $dark-cyan;
+        border-radius: 0;
+    }
+
+    #luxury {
+        border-radius: 0px 10px 10px 0px;
+    }
+}

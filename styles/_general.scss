@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-headings-buttons;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 5% 3% 5% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
