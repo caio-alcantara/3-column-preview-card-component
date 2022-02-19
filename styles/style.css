@@ -31,16 +31,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10px;
 }
 
-.card {
+.card-sedans, .card-suvs, .card-luxury {
   color: white;
   max-width: 500px;
   max-height: 422px;
   padding: 13%;
 }
 
-.card h1 {
+.card-sedans h1, .card-suvs h1, .card-luxury h1 {
   font-family: 'Big Shoulders Display', cursive;
   padding: 20px 0px 20px 0px;
   text-transform: uppercase;
@@ -48,7 +49,7 @@ body {
   font-size: 2.4rem;
 }
 
-.card p {
+.card-sedans p, .card-suvs p, .card-luxury p {
   font-family: 'Lexend Deca', sans-serif;
   line-height: 1.8em;
   font-size: 15px;
@@ -57,7 +58,7 @@ body {
   font-weight: 400;
 }
 
-.card a {
+.card-sedans a, .card-suvs a, .card-luxury a {
   display: block;
   padding: 5% 7% 5% 7%;
   margin-top: 20px;
@@ -69,35 +70,36 @@ body {
   border: 2px solid white;
 }
 
-.card a:hover {
+.card-sedans a:hover, .card-suvs a:hover, .card-luxury a:hover {
   background-color: transparent;
   -webkit-transition-duration: .1s;
-          transition-duration: .1s;
+  transition-duration: .1s;
+  color: rgba(255, 255, 255, 0.75);
 }
 
-#sedans {
+.card-sedans {
   background-color: #e38826;
   border-radius: 10px 10px 0px 0px;
 }
 
-#sedans a {
+.card-sedans a {
   color: #e38826;
 }
 
-#suvs {
+.card-suvs {
   background-color: #006970;
 }
 
-#suvs a {
+.card-suvs a {
   color: #006970;
 }
 
-#luxury {
+.card-luxury {
   background-color: #004241;
   border-radius: 0px 0px 10px 10px;
 }
 
-#luxury a {
+.card-luxury a {
   color: #004241;
 }
 
@@ -112,8 +114,8 @@ body {
             flex-direction: row;
     padding: 100px;
   }
-  .card {
-    width: 300px;
+  .card-sedans, .card-suvs, .card-luxury {
+    width: 270px;
     max-height: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,43 +129,43 @@ body {
             align-items: flex-start;
     padding: 4%;
   }
-  .card a {
+  .card-sedans a, .card-suvs a, .card-luxury a {
     margin-top: 50px;
     width: 140px;
   }
-  #sedans {
+  .card-sedans {
     border-radius: 10px 0px 0px 10px;
   }
-  #suvs {
+  .card-suvs {
     background-color: #006970;
     border-radius: 0;
   }
-  #luxury {
+  .card-luxury {
     border-radius: 0px 10px 10px 0px;
   }
 }
 
-@media screen and (max-width: 250px) {
-  .card p {
+@media screen and (max-width: 256px) {
+  .card-sedans p, .card-suvs p, .card-luxury p {
     line-height: 1.2em;
   }
-  .card h1 {
+  .card-sedans h1, .card-suvs h1, .card-luxury h1 {
     padding: 10px 0px 10px 0px;
   }
-  .card a {
+  .card-sedans a, .card-suvs a, .card-luxury a {
     margin-top: 5px;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  .card {
+  .card-sedans, .card-suvs, .card-luxury {
     width: 400px;
     max-height: 500px;
   }
 }
 
 @media screen and (min-width: 1900px) {
-  .card {
+  .card-sedans, .card-suvs, .card-luxury {
     width: 550px;
     max-height: 600px;
   }

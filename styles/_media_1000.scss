@@ -8,8 +8,8 @@
         padding: 100px;
     }
 
-    .card {
-        width: 300px;
+    .card-sedans, .card-suvs, .card-luxury {
+        width: 270px;
         max-height: 450px;
         display: flex;        
         flex-direction: column;
@@ -22,16 +22,16 @@
         }
     }
 
-    #sedans {
+    .card-sedans {
         border-radius: 10px 0px 0px 10px;
     }
     
-    #suvs {
+    .card-suvs {
         background-color: $dark-cyan;
         border-radius: 0;
     }
 
-    #luxury {
+    .card-luxury {
         border-radius: 0px 10px 10px 0px;
     }
 }
